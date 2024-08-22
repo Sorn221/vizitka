@@ -1,0 +1,15 @@
+{
+    "name": "tim/vizitka-api",
+    "autoload": {
+        "psr-4": {
+            "Vizitka\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "razewithlove",
+            "email": "mister.timkinbro@mail.ru"
+        }
+    ],
+    "require": {}
+}
