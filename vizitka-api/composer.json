@@ -11,5 +11,8 @@
             "email": "mister.timkinbro@mail.ru"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+        "doctrine/orm": "4.0.x-dev"
+    }
 }

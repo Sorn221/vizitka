@@ -5,7 +5,7 @@ namespace Vizitka\Api;
 
 require __DIR__ . "/vendor/autoload.php";
 
-require "init.php";
+require "init_v1.php";
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
@@ -23,6 +23,6 @@ $obRouter = new Router($GLOBALS['PDO']);
 
 try {
     echo $obRouter->handleRequest($arQueryParams, $strMethod, $arData);
-} catch (Exception $e) {
+} catch (\Throwable $e) {
     echo json_encode(['error' => 'Внутренняя ошибка сервера: ' . $e->getMessage()]);
 }
